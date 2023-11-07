@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Figurines</string>
+    <string name="language">french</string>
+    <string name="VAR_KEY1">character</string>
+    <string name="VAR_KEY2">produit</string>
+    <string name="VAR_KEY3">produit</string>
+</resources>

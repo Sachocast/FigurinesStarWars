@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity"
+    android:background="@drawable/_04f07633eb56cd02950cc3e23c08d5b">
+
+    <LinearLayout
+        android:id="@+id/layout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        >
+
+        <Button
+            android:id="@+id/az"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tri A-Z"
+            android:backgroundTint="@color/blue"
+            />
+
+        <Button
+            android:id="@+id/za"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tri Z-A"
+            android:backgroundTint="@color/blue"
+            />
+
+        <Button
+            android:id="@+id/prixCroiss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="prixCroiss"
+            android:backgroundTint="@color/blue"
+            />
+
+        <Button
+            android:id="@+id/prixDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="prixDesc"
+            android:backgroundTint="@color/blue"
+            />
+
+    </LinearLayout>
+
+    <GridView
+        app:layout_constraintTop_toBottomOf="@+id/layout"
+        android:id="@+id/grd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="2"
+        android:columnWidth="150dp"
+        android:horizontalSpacing="20dp"
+        android:verticalSpacing="20dp"
+        android:stretchMode="columnWidth"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
